@@ -19,7 +19,11 @@ vim.keymap.set({ 'n' }, '<A-h>', '<C-w>h')
 vim.keymap.set({ 'n' }, '<A-j>', '<C-w>j')
 vim.keymap.set({ 'n' }, '<A-k>', '<C-w>k')
 vim.keymap.set({ 'n' }, '<A-l>', '<C-w>l')
--- barbar keymaps
+
+-- floaterm keymaps
+vim.keymap.set({'n'}, '<leader>t', ':FloatermNew lazygit<CR>')
+
+-- barbar:keymaps
 
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
