@@ -17,7 +17,6 @@ return {
     "neovim/nvim-lspconfig",
 
 config = function()
-  local lspconfig = require("lspconfig")
   local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
   -- Garante que os servidores listados estejam instalados.
@@ -27,11 +26,11 @@ config = function()
   })
 
   -- Configuração explícita para cada servidor que você quer usar.
-  lspconfig.pyright.setup({
+  vim.lsp.config.pyright.setup({
     capabilities = capabilities,
   })
 
-  lspconfig.awk_ls.setup({
+  vim.lsp.config.awk_ls.setup({
     capabilities = capabilities,
   })
 

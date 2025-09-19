@@ -21,7 +21,7 @@ vim.keymap.set({ 'n' }, '<A-k>', '<C-w>k')
 vim.keymap.set({ 'n' }, '<A-l>', '<C-w>l')
 
 -- floaterm keymaps
-vim.keymap.set({'n'}, '<leader>t', ':FloatermNew lazygit<CR>')
+vim.keymap.set({'n'}, '<leader>t', ':FloatermNew<CR>')
 
 -- barbar:keymaps
 
