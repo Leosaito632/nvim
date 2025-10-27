@@ -7,6 +7,10 @@ return {
     vim.g.loaded_netrwPlugin = 1
   end,
   config = function()
-    require("nvim-tree").setup({})
+    require("nvim-tree").setup({
+	    filters = {
+	    	dotfiles=false,
+	    }
+    })
   end,
 }
