@@ -20,7 +20,7 @@ config = function()
   local capabilities = require("cmp_nvim_lsp").default_capabilities()
   -- Garante que os servidores listados estejam instalados.
   require("mason-lspconfig").setup({
-    ensure_installed = { "pyright"},
+    ensure_installed = { "pyright","angularls","ts_ls", "lua_ls" },
   })
 
   -- Configuração explícita para cada servidor que você quer usar.
